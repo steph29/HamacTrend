@@ -1,0 +1,28 @@
+[   {
+        "name": "Riec-Sur-Belon",
+        "category": "Featured",
+        "city": "Bretagne",
+        "state": "France",
+        "id": 1001,
+        "park": "Proche sentier GR34",
+        "coordinates": {
+            "longitude": -3.697283,
+            "latitude": 47.824149
+        },
+        "imageName": "Riec"
+    },
+    {
+        "name": "Séné",
+        "category": "Featured",
+        "city": "Bretagne",
+        "state": "France",
+        "id": 1002,
+        "park": "Golfe du Morbihan",
+        "coordinates": {
+            "longitude": -2.7335596,
+            "latitude": 47.6000082
+        },
+        "imageName": "Sene"
+    }
+]
+
