@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>720379179251-rnlka5aofaboovprds9un1pt4847qnr5.apps.googleusercontent.com</string>
+	<string>100934073176-357isfn27tcv4iue8epov48hm93vk61k.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.720379179251-rnlka5aofaboovprds9un1pt4847qnr5</string>
+	<string>com.googleusercontent.apps.100934073176-357isfn27tcv4iue8epov48hm93vk61k</string>
 	<key>API_KEY</key>
-	<string>AIzaSyA3gcKHzg90qIS8dPoO2o-C65tXyzKMRe0</string>
+	<string>AIzaSyAW1_f6pZCYX5oI1kuCIQbwueqQVkQNirE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>720379179251</string>
+	<string>100934073176</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>stephane-verardo.HamacTrend</string>
 	<key>PROJECT_ID</key>
-	<string>meteo-1d3b9</string>
+	<string>hamac-trend</string>
 	<key>STORAGE_BUCKET</key>
-	<string>meteo-1d3b9.appspot.com</string>
+	<string>hamac-trend.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:720379179251:ios:a451f626a77cc5b12a4786</string>
+	<string>1:100934073176:ios:212a3301d7901bbd3e832d</string>
 	<key>DATABASE_URL</key>
-	<string>https://meteo-1d3b9.firebaseio.com</string>
+	<string>https://hamac-trend.firebaseio.com</string>
 </dict>
 </plist>

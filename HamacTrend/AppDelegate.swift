@@ -6,6 +6,7 @@
 //  Copyright © 2020 stephane verardo. All rights reserved.
 //
 
+import UIKit
 import UserNotifications
 import Firebase
 import FirebaseMessaging
@@ -78,6 +79,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     didFailToRegisterForRemoteNotificationsWithError error: Error) {
     print("Failed to register: \(error)")
   }
+   
+    
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
       // If you are receiving a notification message while your app is in the background,
       // this callback will not be fired till the user taps on the notification launching the application.
