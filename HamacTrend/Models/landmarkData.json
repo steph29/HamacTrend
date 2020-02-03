@@ -4,6 +4,7 @@
         "city": "Bretagne",
         "state": "France",
         "id": 1001,
+        "isFavorite": true,
         "park": "Proche sentier GR34",
         "coordinates": {
             "longitude": -3.697283,
@@ -17,6 +18,7 @@
         "city": "Bretagne",
         "state": "France",
         "id": 1002,
+        "isFavorite": true,
         "park": "Golfe du Morbihan",
         "coordinates": {
             "longitude": -2.7335596,

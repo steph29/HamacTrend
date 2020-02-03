@@ -10,31 +10,49 @@ import SwiftUI
 import Firebase
 
 struct LandmarkList: View {
+    @EnvironmentObject private var userData: UserData
+    @State var showAddLandmarkView = false
+    //@State var location: Location
     
     var body: some View {
         NavigationView {
-            List(landmarkData) { landmark in
-                            NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                                LandmarkRow(landmark: landmark)
-
-                            }
+            List {
+                Toggle(isOn: $userData.showFavoritesOnly) {
+                    Text("Mes spots fétiches")
+                }
+                
+                ForEach(userData.landmarks) { landmark in
+                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                        NavigationLink(
+                            destination: LandmarkDetail(landmark: landmark)
+                                .environmentObject(self.userData)
+                        ) {
+                            LandmarkRow(landmark: landmark)
                         }
-                     .navigationBarTitle(Text("Spot à hamac"))
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Spot à hamac"), displayMode: .large)
                 .navigationBarItems(trailing: Button(action: {
-                print("Ajout de spot")
+                    self.showAddLandmarkView.toggle()
+                 
             }) {
-                Image(systemName: "plus")
+                Text("Ajouter").bold()
+                    .foregroundColor(.yellow)
             })
-             }
+        }.sheet(isPresented: $showAddLandmarkView) {
+            AddLamdmark(showAddLandmarkView: self.$showAddLandmarkView)
+        }
     }
 }
 
-struct LandmarkList_Previews: PreviewProvider {
+struct LandmarksList_Previews: PreviewProvider {
     static var previews: some View {
-          ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-                  LandmarkList()
-                      .previewDevice(PreviewDevice(rawValue: deviceName))
-            .previewDisplayName(deviceName)
-              }
+        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
+            LandmarkList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+        .environmentObject(UserData())
     }
 }

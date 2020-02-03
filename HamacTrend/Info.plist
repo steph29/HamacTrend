@@ -14,9 +14,9 @@
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Merci d&apos;accepter</string>
+	<string>Merci d&apos;accepter pour le bon fonctionnement de l&apos;application</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Merci d&apos;accepter</string>
+	<string>Merci d&apos;accepter pour le bon fonctionnement de l&apos;application</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
